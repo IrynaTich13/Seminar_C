@@ -14,3 +14,8 @@ while (count <= number)
     Console.Write($"{count}, ");
     count = count + 2;
 }
+
+if (number == 1)
+{
+    Console.WriteLine("К сожаление, чётных чисел не найдено");
+}
