@@ -12,9 +12,9 @@ int b = Convert.ToInt32(Console.ReadLine());
 
 if (a > b)
 {
-    Console.Write($"max = {a}");
+    Console.Write($"max = {a}; min = {b}");
 }
 else
 {
-    Console.Write($"max = {b}");
+    Console.Write($"max = {b}; min = {a}");
 }
