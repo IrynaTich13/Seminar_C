@@ -4,19 +4,20 @@
 // 3 . выдаёт номер четверти плоскости, в которой находится эта точка.
 
 
-Console.WriteLine("Введите координаты точки");
-Console.Write("X: ");
-int xCoordinate = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты точки");  // добавляем запрос для пользователя
+Console.Write("X: ");                            // показываем какую именно координату нужно ввести
+int xCoordinate = Convert.ToInt32(Console.ReadLine());  // получаем эту координату от пользователя (получаем строку от пользователя и преобразовываем её в целое число)
 Console.Write("Y: ");
 int yCoordinate = Convert.ToInt32(Console.ReadLine());
 
-int quarter = Quarter(xCoordinate, yCoordinate);
+int quarter = Quarter(xCoordinate, yCoordinate);  // в скобках не нужнен int, так как мы уже определили его в строках 9 и 11
 string result = quarter > 0 
-                ? $"Указанные координаты соответсвуют четверти -> {quarter}" 
+                ? $"Указанные координаты соответствуют четверти -> {quarter}" 
                 : "Введены некорректные координаты";
 Console.WriteLine(result);
 
-int Quarter(int x, int y)
+int Quarter(int x, int y)          // реализация самой логики программы - создаём метод. Далее - стр 13 переходим к вызову метода и поучению результатов: создаём переменную, которой присваиваем значение, которое вернёт нам метод
+                                   
 {
     if (x > 0 && y > 0) return 1;
     if (x < 0 && y > 0) return 2;
