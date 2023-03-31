@@ -16,7 +16,7 @@ int y2Coordinate = Convert.ToInt32(Console.ReadLine());
 
 double result = Distance(x1Coordinate, y1Coordinate, x2Coordinate, y2Coordinate);
 double resRound = Math.Round(result, 2, MidpointRounding.ToZero);
-Console.WriteLine($"Расстояние между введёнными точками -> {resRound}");
+Console.WriteLine($"Расстояние между введёнными точками - {resRound}");
 
 double Distance(int x1, int y1, int x2, int y2)
 {
@@ -31,3 +31,4 @@ double Distance(int x1, int y1, int x2, int y2)
 // double res = 5.099987564;
 // double resRound = Math.Round(res, 2, MidpointRounding.ToZero);
 // Console.WriteLine(resRound);
+
