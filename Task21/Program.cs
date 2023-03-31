@@ -20,7 +20,6 @@ int num2Y = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите координату второй точки по z: ");
 int num2Z = Convert.ToInt32(Console.ReadLine());
 
-
 double result = Distance(num1X, num1Y, num1Z, num2X, num2Y, num2Z);
 double resRound = Math.Round(result, 2, MidpointRounding.ToZero);
 Console.WriteLine($"Расстояние между введёнными точками -> {resRound}");
