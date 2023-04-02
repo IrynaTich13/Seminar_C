@@ -7,31 +7,52 @@
 // 12821 -> да
 // 23432 -> да
 
-Console.Write("Введите пятизначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите пятизначное число: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-if (number < 0) number = number * -1;
-if (number > 9999 && number < 100000)
+if (num < 0) num = num * -1;
+
+if (num > 9999 && num < 100000)
 {
-    bool result = Palindrom(number);
+    bool result = Palindrom(num);
     Console.WriteLine(result ? "Введённое число является палиндромом" : "Введённое число НЕ является палиндромом");
 }
 else
-    Console.Write("Вы ввели не пятизначное число");
+    Console.WriteLine("Вы ввели не пятизначное число");
 
-bool Palindrom(int num)
+bool Palindrom(int number)
 {
-    int firstnum = num;
-    int reversNum = 0;
-
-    while (num > 0)
-    {
-        reversNum = reversNum * 10 + num % 10;
-        num /= 10;
-    }
-    return reversNum == firstnum;
+    return ((num / 10000 == num % 10) && ((num / 1000) % 10 == (num % 100) / 10));
 }
 
+/////////////////////////////////////////////////////////////////////////////
+
+// Console.Write("Введите пятизначное число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// if (number < 0) number = number * -1;
+// if (number > 9999 && number < 100000)
+// {
+//     bool result = Palindrom(number);
+//     Console.WriteLine(result ? "Введённое число является палиндромом" : "Введённое число НЕ является палиндромом");
+// }
+// else
+//     Console.Write("Вы ввели не пятизначное число");
+
+// bool Palindrom(int num)
+// {
+//     int firstnum = num;
+//     int reversNum = 0;
+
+//     while (num > 0)
+//     {
+//         reversNum = reversNum * 10 + num % 10;
+//         num /= 10;
+//     }
+//     return reversNum == firstnum;
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Console.WriteLine("Введите пятизначное число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
@@ -54,3 +75,4 @@ bool Palindrom(int num)
 
 //(num / 10000 == num % 10) - сраниваем 1 и 5 цифры
 //(num / 1000) % 10 == (num % 100) / 10) - сравниваем 2 и 4 цифры
+
