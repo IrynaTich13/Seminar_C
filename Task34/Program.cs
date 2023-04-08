@@ -5,13 +5,13 @@
 
 int[] arr = CreateArreyRndInt(4, 100, 999);
 
-int count = CountElemets(arr);
+int count = CountEvenNumber(arr);
 
 PrintArray(arr);
 Console.WriteLine();
 Console.Write($"Колличество чётных чисел в данном массиве -> {count}");
 
-int CountElemets(int[] array)
+int CountEvenNumber(int[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
