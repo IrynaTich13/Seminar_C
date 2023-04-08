@@ -2,12 +2,13 @@
 //преобразовывать десятичное число в двоичное.
 
 // 45 -> 101101
+// 46 -> 101110
 // 3 -> 11
 // 2 -> 10
 
 
-// int decimal1 = 2;
-// string result = DecToBin(decimal1);
+// int decimal1 = 46;
+// string result = DecToBinString(decimal1);
 
 // Console.WriteLine(result);
 
@@ -15,7 +16,7 @@
 // {
 //     if (decimaNumber == 0 || decimaNumber == 1)
 //     {
-//         return Convert.ToString(decimaNumber);
+//         return decimaNumber.ToString();
 //     }
     
 //     string dec = string.Empty;
