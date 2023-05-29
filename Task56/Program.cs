@@ -24,7 +24,7 @@ if (Verivication (row, column))
     return;
 }
 
-int[,] array2d = CreateMatrix(row, column, 0, 5);
+int[,] array2d = CreateMatrix(row, column, -10, 10);
 PrintMatrix(array2d);
 
 int[] arrSumElementRow = SumElementRow(array2d);

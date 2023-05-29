@@ -49,8 +49,7 @@ void PrintMatrix(int[,] matrix)
 
 void SortDescendingElementRow(int[,] matrix)
 {
-    
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)                     //построчная сортировка массива
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
@@ -68,8 +67,4 @@ void SortDescendingElementRow(int[,] matrix)
     }
 }
 
-// int[,] array2d = CreateMatrix(3, 4, 0, 10);
-// PrintMatrix(array2d);
-// Console.WriteLine();
-// SortDescendingElementRow(array2d);
-// PrintMatrix(array2d);
+

@@ -13,7 +13,7 @@ if (SquareMatrix(array2d))
     PrintMatrix(array2d);
 }
 else Console.WriteLine("Ошибка. Число строк не равно числу столбцов.");
-
+ 
 bool SquareMatrix(int[,] matrix)
 {
     return (matrix.GetLength(0) == matrix.GetLength(1));
