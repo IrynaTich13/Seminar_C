@@ -31,7 +31,7 @@ int SumNaturalNumber(int num1, int num2)
     else return num1 + SumNaturalNumber(num1 + 1, num2);
 }
 
-bool Verification (int num1, int num2)
+bool Verification(int num1, int num2)
 {
     return (num1 <= 0 || num2 <= 0);
 }

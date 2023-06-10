@@ -8,9 +8,10 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 NaturalNumbers(number);
 
- void NaturalNumbers(int num)
- {
-    if(num ==0) return;  // определили условия выхода из рекурсии. Для этого переменная должна меняться.
-    NaturalNumbers (num - 1);
+void NaturalNumbers(int num)
+{
+    if (num == 0) return;  // определили условия выхода из рекурсии. Для этого переменная должна меняться.
+    NaturalNumbers(num - 1);
     Console.Write($"{num} ");
- }
+}
+
